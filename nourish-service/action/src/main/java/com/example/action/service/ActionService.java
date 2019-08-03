@@ -13,7 +13,7 @@ public class ActionService {
     @Autowired
     private RecordServiceRm recordServiceRm;
 
-//    @HystrixCommand(fallbackMethod = "defaultAction")
+    @HystrixCommand(fallbackMethod = "defaultAction")
     public Map<String,Object> doAction(Map<String, Object> parameters) {
         //do stuff that might fail
         if (!parameters.get("username").equals("liguang")) {
