@@ -13,6 +13,7 @@
     <modules>
         <module>action</module>
         <module>record</module>
+        <module>facade</module>
     </modules>
 
     <properties>
