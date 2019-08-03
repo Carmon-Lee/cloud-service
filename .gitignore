@@ -1,8 +1,3 @@
-config-center/.idea
-config-center/.config-center.iml
 
-service-center/.idea
-service-center/.service-center.iml
-
-nourish-service/.idea
-nourish-service/.nourish-service.iml
+*.iml
+*/.idea

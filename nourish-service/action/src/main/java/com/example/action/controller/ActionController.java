@@ -10,14 +10,15 @@ import java.util.Date;
 import java.util.HashMap;
 
 @RestController
+@RequestMapping("/")
 public class ActionController {
-
 
     @Autowired
     private ActionService actionService;
 
     @RequestMapping("/action")
     public Object action(final String username) {
+
         return actionService.doAction(new HashMap(){
             {
                 put("username", username);
